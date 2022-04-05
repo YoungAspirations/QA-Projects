@@ -7,15 +7,15 @@
 4. [Configuration](#header4)
 5. [Troubleshooting](#header5)
 6. [Tools](#header6)
-6. [Trello Board](#header7)
-7. [Entity Relationship Diagram](#header8)
-8. [Testing](#header9)
-9. [Risk Assessment](#header10)
-10. [Licensing](#header11)
-11. [Contributors](#header12)
+7. [Trello Board](#header7)
+8. [Entity Relationship Diagram](#header8)
+9. [Testing](#header9)
+10. [Risk Assessment](#header10)
+11. [Versioning(?)](#header14)
 12. [Acknowledgements](#header13)
-13. [Versioning(?)](#header14)
+13. [Contributors](#header12)
 14. [Author](#header15)
+15. [Licensing](#header11)
 
 ## Introduction<a name= "header"></a>
 
@@ -48,14 +48,24 @@
 |    A    |    B    |    A    |    B    |    A    |    B    |
 |    C    |    D    |    A    |    B    |    A    |    B    |
 
-## Licensing<a name= "header11"></a>
+## Versioning<a name= "header11"></a>
 
-## Contributors<a name= "header12"></a>
+## Acknowledgements<a name= "header12"></a>
 
-## Acknowledgements<a name= "header13"></a>
+## Contributors<a name= "header13"></a>
 
-## Versioning<a name= "header14"></a>
+The contributor to this project is Christopher Pierre-Samuel with a link given below. 
 
-## Author<a name= "header15"></a>
+<a href="https://github.com/YoungAspirations/QA-Projects/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=YoungAspirations/QA-Projects" />
+</a>
 
+## Author<a name= "header14"></a>
 
+Christopher Pierre-Samuel <c.pierre-samuel@hotmail.co.uk> 
+
+## Licensing & Copyright<a name= "header15"></a>
+
+© Christopher Pierre-Samuel, QA Academy
+
+The DevOps Core Fundamental Project is licensed under the [MIT License](LICENSE).
