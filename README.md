@@ -18,25 +18,25 @@
 15. [Licensing](#header11)
 
 ## Introduction<a name= "header"></a>
-
+[//]: # "Write an introduction to the project and your motives."
 ## Requirements<a name= "header2"></a>
-
+[//]: # "Add requirements to run app "
 ## Installation<a name= "header3"></a>
-
+[//]: # "Add installation procedure and alternatives to run app"
 ## Configuration<a name= "header4"></a>
 
 ## Troubleshooting<a name= "header5"></a>
-
+[//]: # "Any issues that can be troubleshooted should be listed here"
 ## Tools<a name= "header6"></a>
-
+[//]: # "Tools used such as; SQLAlchemy, VM, Python3, Pytest, Flask etc"
 ## Trello Board<a name= "header7"></a>
-
+[//]: # "Trello board defining tasks"
 ## Entity Relationship Diagram<a name= "header8"></a>
-
+[//]: # "ER Diagram defining relationships of tables"
 ## Testing<a name= "header9"></a>
-
+[//]: # "Python code that was tested and why"
 ## Risk Assessment<a name= "header10"></a>
-
+[//]: # "Self explanitory"
 |Column 1|Column 2|Column 3|Column 4|Column 5|Column 6|
 |--------|--------|--------|--------|--------|--------|
 |    A    |    B    |    A    |    B    |    A    |    B    |
@@ -49,9 +49,9 @@
 |    C    |    D    |    A    |    B    |    A    |    B    |
 
 ## Versioning<a name= "header11"></a>
-
+[//]: # "How the code works at different stages of the project"
 ## Acknowledgements<a name= "header12"></a>
-
+[//]: # "Acknowledge contributors to the project; Victoria, Ryan, Harry etc."
 ## Contributors<a name= "header13"></a>
 
 The contributor to this project is Christopher Pierre-Samuel with a link given below. 
