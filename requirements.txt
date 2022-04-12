@@ -4,6 +4,4 @@ flask_wtf
 flask_testing
 pytest
 pytest-cov
-python3
-python3-venv
-python3-pip
+pymysql

@@ -1,0 +1,18 @@
+{% extend "layout.html"%}
+
+{% block body %}
+<form method="POST" action ="">
+    <h2>Please add the specified game details</h2>
+    {{form3.hidden_tag() }}
+    {{form3.title.label}}: {{form3.title}}<br>
+    {{form3.platform.label}}: {{form3.platform}}<br>
+    {{form3.rating.label}}: {{form3.rating}}<br>
+    {{form3.status.label}}: {{form3.status}}<br>
+    <br>
+    <h2>Please add any additional information if known</h2>
+    {{form4.publisher.label}}: {{form4.publisher}}
+    {{form4.genre.label}}: {{form4.genre}}
+    {{form4.units.label}}: {{form4.units}}
+    {{form4.esrb_rating.label}}: {{form4.esrb_rating}}
+    {{form4.engine.label}}: {{form4.engine}}
+{% end blockbody %}
