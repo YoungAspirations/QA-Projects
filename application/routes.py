@@ -58,3 +58,4 @@ def Delete(game_title):
         return render_template('DeleteGame.html', form=form)
     else :
         return render_template('DeleteGame.html', form=form)
+()

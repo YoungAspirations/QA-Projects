@@ -57,3 +57,4 @@ class GamesForm(FlaskForm):
             ("dropped","Dropped")
     ])
     submit = SubmitField('Add Game')
+    ()
