@@ -1,18 +1,22 @@
-{% extend "layout.html"%}
+{% extends "layout.html"%}
+{% block title %} Add a Game {% endblock %}
 
 {% block body %}
 <form method="POST" action ="">
     <h2>Please add the specified game details</h2>
-    {{form3.hidden_tag() }}
-    {{form3.title.label}}: {{form3.title}}<br>
-    {{form3.platform.label}}: {{form3.platform}}<br>
-    {{form3.rating.label}}: {{form3.rating}}<br>
-    {{form3.status.label}}: {{form3.status}}<br>
+    {{form.hidden_tag() }}
+    {{form.title.label}}: {{form.title}}<br>
+    {{form.platform.label}}: {{form.platform}}<br>
+    {{form.rating.label}}: {{form.rating}}<br>
+    {{form.status.label}}: {{form.status}}<br>
     <br>
     <h2>Please add any additional information if known</h2>
-    {{form4.publisher.label}}: {{form4.publisher}}
-    {{form4.genre.label}}: {{form4.genre}}
-    {{form4.units.label}}: {{form4.units}}
-    {{form4.esrb_rating.label}}: {{form4.esrb_rating}}
-    {{form4.engine.label}}: {{form4.engine}}
-{% end blockbody %}
+    {{form2.hidden_tag() }}<br>
+    {{form2.publisher.label}}: {{form2.publisher}}<br>
+    {{form2.genre.label}}: {{form2.genre}}<br>
+    {{form2.units.label}}: {{form2.units}}
+    {{form2.esrb_rating.label}}: {{form2.esrb_rating}}<br>
+    {{form2.engine.label}}: {{form2.engine}}<br>
+    {{form.submit}} {{form2.submit}}
+</form>
+{% endblock body %}

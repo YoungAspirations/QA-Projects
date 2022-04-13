@@ -1,6 +1,22 @@
-{% extend "layout.html"%}
-
+{% extends "layout.html"%}
+{% block title %} Read Gaming List {% endblock %}
 {% block body %}
 <h2>Here is your game library:</h2>
-
-{% end blockbody %}
+<p>   
+    {% for game in Games %}
+    Title: {{game.Title}} <br>
+    Platform: {{game.Platform}} <br>
+    Rating: {{game.Rating}} <br>
+    details = GameDetails.query.filter_by(id = game.id).first()
+    {% if details is not None %} <br>
+        Publisher: GameDetails.query.filter_by(id = game.id).first().Publisher
+        Genre: GameDetails.query.filter_by(id = game.id).first().Genre
+        Units_sold: GameDetails.query.filter_by(id = game.id).first().Units_sold
+        ESRB_Rating: GameDetails.query.filter_by(id = game.id).first().ESRB_Rating
+        Engine: GameDetails.query.filter_by(id = game.id).first().Engine
+    {% endif %}
+    Status: {{game.Status}} <br>
+    {% endfor %}
+This is the end of your list
+</p>     
+{% endblock body %}

@@ -5,10 +5,10 @@
 <body>
     <navbar>
         <a href="/">Home</a>
-        <a href="{{ url_for('/AddGame) }}">Add Game</a>
-        <a href="{{ url_for('/DeleteGame) }}">Delete Game</a>
-        <a href="{{ url_for('/UpdateGame) }}">Update Game</a>
-        <a href="{{ url_for('/ReadGame) }}">Game List</a>
+        <a href="{{ url_for('Add') }}">Add Game</a>
+        <a href="{{ url_for('Delete', game_title = Halo2) }}">Delete Game</a>
+        <a href="{{ url_for('Update') }}">Update Game</a>
+        <a href="{{ url_for('Read') }}">Game List</a>
     </navbar>
     <h1>My Video Game Record</h1>
 

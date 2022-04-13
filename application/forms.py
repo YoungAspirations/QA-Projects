@@ -37,7 +37,7 @@ class GameDetailsForm(FlaskForm):
 class GamesForm(FlaskForm):
     title = StringField('Game Title', validators=[DataRequired(), Length(max=30)])
     platform = StringField('Platform', validators=[Length(max=30)])
-    rating = SelectField("Your score", score = 
+    rating = SelectField('Your score', score = 
             [("1","1"),
             ("2","2"),
             ("3","3"),
