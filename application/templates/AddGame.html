@@ -9,14 +9,9 @@
     {{form.platform.label}}: {{form.platform}}<br>
     {{form.rating.label}}: {{form.rating}}<br>
     {{form.status.label}}: {{form.status}}<br>
+    {{form.gamedetails_id.label}}: {{form.gamedetails_id}}<br>
+    {{form.user_id.label}}: {{form.user_id}}<br>
     <br>
-    <h2>Please add any additional information if known</h2>
-    {{form2.hidden_tag() }}<br>
-    {{form2.publisher.label}}: {{form2.publisher}}<br>
-    {{form2.genre.label}}: {{form2.genre}}<br>
-    {{form2.units.label}}: {{form2.units}}
-    {{form2.esrb_rating.label}}: {{form2.esrb_rating}}<br>
-    {{form2.engine.label}}: {{form2.engine}}<br>
-    {{form.submit}} {{form2.submit}}
+    {{ form.submit }}
 </form>
 {% endblock body %}

@@ -11,8 +11,8 @@ class UsersForm(FlaskForm):
     submit = SubmitField('Add Credentials')
 
 class GameDetailsForm(FlaskForm):
-    publisher = StringField('First name', validators=[Length(min=2,max=30)])
-    genre = SelectField('Genre', categories = 
+    publisher = StringField('Publisher Name', validators=[Length(min=2,max=30)])
+    genre = SelectField('Genre', choices = 
             [("action", "Action"), 
             ("adventure", "Adventure"),
             ("rpg","RPG"),
@@ -22,7 +22,7 @@ class GameDetailsForm(FlaskForm):
             ("arena brawler","Arena Brawler")
     ])
     units = IntegerField("Units sold")
-    esrb_rating = SelectField('Video game age rating', esrb =
+    esrb_rating = SelectField('Video game age rating', choices =
             [("e (everyone)","E (Everyone)"),
             ("e10+ (everyone 10+)","E10+ (Everyone 10+)"),
             ("teen","Teen"),
@@ -37,7 +37,7 @@ class GameDetailsForm(FlaskForm):
 class GamesForm(FlaskForm):
     title = StringField('Game Title', validators=[DataRequired(), Length(max=30)])
     platform = StringField('Platform', validators=[Length(max=30)])
-    rating = SelectField('Your score', score = 
+    rating = SelectField('Your score', choices = 
             [("1","1"),
             ("2","2"),
             ("3","3"),
@@ -49,12 +49,38 @@ class GamesForm(FlaskForm):
             ("9","9"),
             ("10","10")
     ]) 
-    status = SelectField("status of the game", status_of_game = 
+    status = SelectField("status of the game", choices = 
             [("plan to play","Plan to play"),
             ("playing","Playing"),
             ("on hold","On Hold"),
             ("completed","Completed"),
             ("dropped","Dropped")
     ])
-    submit = SubmitField('Add Game')
-    ()
+    gamedetails_id = IntegerField("Game id")
+    user_id = IntegerField("User id")
+    submit = SubmitField("Add Game")
+
+class UpdateForm(FlaskForm):
+    title = StringField('Game Title', validators=[DataRequired(), Length(max=30)])
+    platform = StringField('Platform', validators=[Length(max=30)])
+    rating = SelectField('Your score', choices = 
+            [("1","1"),
+            ("2","2"),
+            ("3","3"),
+            ("4","4"),
+            ("5","5"),
+            ("6","6"),
+            ("7","7"),
+            ("8","8"),
+            ("9","9"),
+            ("10","10")
+    ]) 
+    status = SelectField("status of the game", choices = 
+            [("plan to play","Plan to play"),
+            ("playing","Playing"),
+            ("on hold","On Hold"),
+            ("completed","Completed"),
+            ("dropped","Dropped")
+    ])
+    submit = SubmitField("Add Game")
+    

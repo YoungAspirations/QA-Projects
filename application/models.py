@@ -25,5 +25,4 @@ class Games(db.Model):
     Title = db.Column(db.String(30), nullable = False)
     Platform = db.Column(db.String(30), nullable = True)
     Rating = db.Column(db.Integer, nullable = True)
-    Status = db.Column(db.String(30), nullable = False)
-    ()
+    Status = db.Column(db.String(30), nullable = False)  
