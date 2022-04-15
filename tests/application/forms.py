@@ -20,8 +20,6 @@ class GameDetailsForm(FlaskForm):
             ("fps","FPS"),
             ("open world","Open World"),
             ("arena brawler","Arena Brawler"),
-            ("multiplayer","Multiplayer"),
-            ("party game", 'Party Game')
     ])
     units = IntegerField("Units sold")
     esrb_rating = SelectField('Video game age rating', choices =
