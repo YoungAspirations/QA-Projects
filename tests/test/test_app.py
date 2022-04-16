@@ -1,4 +1,3 @@
-from turtle import title
 from flask_testing import TestCase
 from application import app, db
 from application.models import GameDetails, Games, Users
@@ -52,6 +51,8 @@ class TestView(TestBase):
     def test_read_get(self):
         response = self.client.get(url_for('Read'))
         self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Halo', response.data)
+        self.assertIn(b'Zombie Party', response.data)
 
     def test_update_get(self):
         response = self.client.get(url_for('Update', Title = 'Halo' ))
@@ -61,48 +62,54 @@ class TestAdd(TestBase):
     def test_add_user(self):
         response = self.client.post(
             url_for('AddUser'),
-            data = dict(First_name='Darnell',
-            Last_name='Cambell',
-            User_name='BallisLife',
-            Password='Pa$$W0rD',
-            Email='DarnellCambell@gmail.com')
+            data = dict(first_name='Darnell',
+            last_name='Cambell',
+            user_name='BallisLife',
+            password='Pa$$W0rD',
+            email='DarnellCambell@gmail.com')
         )
         self.assertEqual(response.status_code, 200)
         assert Users.query.filter_by(First_name= 'Darnell').first().id == 3
+        assert len(Users.query.all()) == 3
 
     def test_add_game_details(self):
         response = self.client.post(
             url_for('AddDetails'),
-            data = dict( Publisher='Square Enix',
-            Genre='rpg',
-            Units_sold= int(500),
-            ESRB_Rating= 'e (everyone)',
+            data = dict( publisher='Square Enix',
+            genre='rpg',
+            units_sold= int(500),
+            esrb_rating= 'e (everyone)',
             engine= 'Frostbite')
         )
-        self.assertEqual(response.status_code, 200)
+        assert GameDetails.query.filter_by(Publisher= 'Square Enix').first().id == 3
+        assert len(GameDetails.query.all()) == 3
         
     def test_add_game(self):
         response = self.client.post(
             url_for('Add'),
-            data = dict(Users_id= int(3),
-            GameDetails_id= int(3),
-            Title = 'Banjo Kazooie',
-            Platform = 'Xbox 360',
-            Rating= int(6),
-            Status = 'plan to play')
+            data = dict(user_id= int(3),
+            gamedetails_id= int(3),
+            title = 'Banjo Kazooie',
+            platform = 'Xbox 360',
+            rating= int(6),
+            status = 'plan to play')
          )
-        self.assertEqual(response.status_code, 200)
-        assert GameDetails.query.filter_by(Title= 'Banjo Kazooie').first().id == 3
+        assert Games.query.filter_by(Title= 'Banjo Kazooie').first().id == 3
+        assert len(Games.query.all()) == 3
 
-    def test_add_game(self):
+    def test_update_game(self):
         response = self.client.post(
             url_for('Update', Title = 'Halo'),
-            data = dict(Title = 'Gears of War',
-            Platform = 'Xbox 360', 
-            Rating = int(10),
-            Status ='playing',
+            data = dict(title = 'Gears of War',
+            platform = 'Xbox 360', 
+            rating = int(10),
+            status ='playing',
             follow_redirect = True)
         )
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Gears of War', response.data)
-        assert Games.query.filter_by(Title= 'Gears of War').first.id() == 3
+        assert Games.query.filter_by(Title= 'Gears of War').first().id == 1
+
+    def test_delete_game(self):
+        response = self.client.post(
+            url_for('Delete', Title= 'Halo')
+        )
+        assert len(Games.query.all()) == 1
