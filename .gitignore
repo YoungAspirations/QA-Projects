@@ -1,2 +1,5 @@
 /venv
 /application/__pycache__
+.coverage
+Jenkins.sh
+__pycache__
