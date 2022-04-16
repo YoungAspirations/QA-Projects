@@ -19,8 +19,37 @@
 
 ## Introduction<a name= "header"></a>
 [//]: # "Write an introduction to the project and your motives."
+This README.md is documentation for my DevOps core fundamental project where I was tasked to create a
+fully functional Create Read Update Delete (CRUD) application. It must utilise the specified tools and skills
+prior to starting the project.
+
+I will detail all phases of the project, from why specific tools were used, up to Jenkins for software
+automation and testing. In addition, some additional thoughts for extra improvements will be stated towards the
+end of the document.
+
 ## Requirements<a name= "header2"></a>
 [//]: # "Add requirements to run app "
+Here is a brief section on the skills and output requirements of the project that were not mentioned in the introduction.
+
+### Skills
+- Project Management - Planning, time management, and agile working
+- Python Fundamentals - Basic Python Skills
+- Python Testing - To check if the code works how we expect it to
+- Git - Version Control
+- Basic Linux - Commands to operate Linux machines
+- Python Web Development - To build a web-based application
+- Continuous Integration -
+- Cloud Fundamentals - The ability to use and configure Google Cloud Platforms (GCP) to generate virtual machines (VM) and databases
+- Databases - Create databases and store inputs
+
+### Output
+- Risk Assessment - An analysis on potential risk factors in the project
+- Relational Database - A relational database with at least 2 tables in it that can be used to store data
+- Front-end website - Function front-end website that uses Flask's integrated API's
+- 
+- 
+- 
+- 
 ## Installation<a name= "header3"></a>
 [//]: # "Add installation procedure and alternatives to run app"
 ## Configuration<a name= "header4"></a>
