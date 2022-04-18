@@ -144,7 +144,7 @@ The board was created to help with the development cycle while completing the pr
 [//]: # "Self explanitory"
 Here is an image of my risk assessment detailing the internal and external risk factors to the project.
 
-![Imgur](https://imgur.com/Vvdp7eg.png)
+![Imgur](https://imgur.com/PlBKbBj.png)
 ## Testing<a name= "header9"></a>
 [//]: # "Python code that was tested and why"
 The testing on the application was done using unit testing to check specific outcomes of the application were coming out correctly and returned errors if not true. In addition, pytest-cov was used to give coverage reports for the application to see how much was tested. My results are shown below are for the pytest coverage report and pytest results from Jenkins respectively.
@@ -162,7 +162,7 @@ Homepage
 
 Add a user to the database.
 
-![Imgur](https://imgur.com/YQ5nS4F.png)
+![Imgur](https://imgur.com/MROVBdL.png)
 
 Add game details to the database.
 ![Imgur](https://imgur.com/E71nmyy.png)
