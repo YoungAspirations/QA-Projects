@@ -1,6 +1,8 @@
 # Personal Game Archive README
 ***
-Here is a small presentation of me demonstrating the app and all the requirements of the project:
+It seems that additional software will need to be downloded. I have tried converting to an mp4 and sharing this link but it was showing the same thing. Here is a small presentation of me demonstrating the app and all the requirements of the project:
+
+[Presentation](https://drive.google.com/file/d/1Fu_o6xfZgq2m3yrE3aXVPt7ydnYowO_w/view?usp=sharing)
 
 ## Introduction<a name= "header"></a>
 [//]: # "Write an introduction to the project and your motives."
