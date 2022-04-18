@@ -99,7 +99,7 @@ Here is the design of the app functionality that I wished to create for the user
     - Rating - What score do they give the game
     - Status - They can state whether they plan to play the game or if it is completed etc.
 
-- Add additional details about the game (Facilitates Create capability):
+- Add additional details about the game (Facilitates Read capability):
     - Publisher - What company published the game
     - Genre - Specify what type of game it is
     - Units Sold - How many copys of the game were sold
