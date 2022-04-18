@@ -1,5 +1,7 @@
 # Personal Game Archive README
 ***
+Here is a small presentation of me demonstrating the app and all the requirements of the project:
+
 ## Introduction<a name= "header"></a>
 [//]: # "Write an introduction to the project and your motives."
 This README.md is documentation for my DevOps core fundamental project where I was tasked to create a
@@ -151,9 +153,31 @@ The testing on the application was done using unit testing to check specific out
 ![Imgur](https://imgur.com/vI5Altn.png)
 
 ## Front-End Design<a name= "header17"></a>
-This section will show the html pages that I have created to facilitate CRUD functionality
+This section will show the html pages that I have created to facilitate CRUD functionality.
 
-Here 
+![Imgur](https://imgur.com/Ozr91yM.png)
+
+Add a user to the database.
+![Imgur](https://imgur.com/YQ5nS4F.png)
+
+Add game details to the database.
+![Imgur](https://imgur.com/E71nmyy.png)
+
+Add a game to the list.
+
+![Imgur](https://imgur.com/AmTZUbq.png)
+
+View the game list .
+
+![Imgur](https://imgur.com/Bq1uJ5q.png)
+
+Update and a game in the list followed by the updated game list.
+![Imgur](https://imgur.com/lHKuvRF.png)
+
+![Imgur](https://imgur.com/isE2uqa.png)
+
+Also, clicking on the delete button will remove the game from the list.
+
 ## Troubleshooting<a name= "header5"></a>
 [//]: # "Any issues that can be troubleshooted should be listed here"
 Here I will state any issues that I had regarding this project that may be applicable to you too.
@@ -195,12 +219,6 @@ Make sure that you use correct indentation and spell everything correctly as inc
 - A recommendation tool that gives users suggestions on games depending on their games list
 - A filter feature by genre, rating etc.
 - Password encrption
-
-
-
-
-
-
 
 ## Known Issues<a name= "header11"></a>
 [//]: # "Known issues of the project"
