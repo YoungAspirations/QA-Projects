@@ -19,6 +19,7 @@ prior to starting the project.
 10. [Risk Assessment](#header10)
 9. [Testing](#header9)
 17. [Front-End Design](#header17)
+18. [Feature-Branch](#header18)
 5. [Troubleshooting](#header5)
 6. [Additional Improvements](#header6)
 11. [Author](#header14)
@@ -170,7 +171,7 @@ Add a game to the list.
 
 ![Imgur](https://imgur.com/AmTZUbq.png)
 
-View the game list .
+View the game list.
 
 ![Imgur](https://imgur.com/Bq1uJ5q.png)
 
@@ -181,6 +182,11 @@ Update and a game in the list followed by the updated game list.
 ![Imgur](https://imgur.com/isE2uqa.png)
 
 Also, clicking on the delete button will remove the game from the list.
+
+## Feature-Branch<a name= "header18"></a>
+Here is an image of the project network showing that I used the feature-branch model for code development.
+
+![Imgur](https://imgur.com/x17S47W.png)
 
 ## Troubleshooting<a name= "header5"></a>
 [//]: # "Any issues that can be troubleshooted should be listed here"
@@ -224,6 +230,7 @@ Make sure that you use correct indentation and spell everything correctly as inc
 - A filter feature by genre, rating etc.
 - Password encrption
 
+
 ## Known Issues<a name= "header11"></a>
 [//]: # "Known issues of the project"
 Issues known to be causing to be causing complications for the app:
@@ -233,6 +240,8 @@ Issues known to be causing to be causing complications for the app:
 - There is no password confimation to make sure that the user is entering the correct password
 - Passwords are not being encrtypted before entering the database
 - There is currently no protection from SQL Injections
+
+
 
 ## Acknowledgements<a name= "header12"></a>
 [//]: # "Acknowledge contributors to the project; Victoria, Ryan, Harry etc."
