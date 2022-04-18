@@ -1,0 +1,14 @@
+{% extends "layout.html"%}
+{% block title %} Update a Game {% endblock %}
+{% block body %}
+<form method="POST" action ="">
+    <h2>Please add the specified game details</h2>
+    {{form.hidden_tag() }}
+    {{form.title.label}}: {{form.title}}<br>
+    {{form.platform.label}}: {{form.platform}}<br>
+    {{form.rating.label}}: {{form.rating}}<br>
+    {{form.status.label}}: {{form.status}}<br>
+    <br>
+    {{ form.submit }}
+</form>
+{% endblock body %}

@@ -1,0 +1,30 @@
+{% extends "layout.html"%}
+{% block title %} Read Gaming List {% endblock %}
+{% block body %}
+<h2>Here is your game library:</h2>
+<p>   
+    {% for game in gameslist %}
+    <h3>{{game.Title}}'s Information</h3>
+    Title: {{game.Title}} <br>
+    Platform: {{game.Platform}} <br>
+    Rating: {{game.Rating}} <br>
+    {% for info in extradetails %}
+    {% if info.id == game.GameDetails_id %} <br>
+    <h3>Additional Information for {{game.Title}} </h3>
+        Publisher: {{info.Publisher}}<br>
+        Genre: {{info.Genre}}<br>
+        Units_sold: {{info.Units_sold}}<br>
+        ESRB_Rating: {{info.ESRB_Rating}}<br>
+        Engine: {{info.Engine}}<br>
+        Status: {{game.Status}}
+        <br>
+        <a href = "{{ url_for('Delete', Title = game.Title) }}" >Delete Game</a>
+        <a href = "{{ url_for('Update', Title = game.Title) }}" >Update Game</a>
+        <br>
+    {% endif %}
+    
+    {% endfor %}
+    {% endfor %}
+This is the end of your list
+</p>     
+{% endblock body %}

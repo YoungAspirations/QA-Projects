@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+{% block title %} PLease Enter User Credentials {% endblock %}
+
+{% block body %}
+<form method="POST" action ="">
+    <h2>Please add user creddentials</h2>
+    {{form.hidden_tag() }}<br>
+    {{form.first_name.label}}: {{form.first_name}}<br>
+    {{form.last_name.label}}: {{form.last_name}}<br>
+    {{form.user_name.label}}: {{form.user_name}}
+    {{form.password.label}}: {{form.password}}<br>
+    {{form.email.label}}: {{form.email}}<br>
+    {{form.submit}}
+</form>
+{% endblock body %}

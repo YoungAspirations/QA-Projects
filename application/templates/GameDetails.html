@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+{% block title %} Add Game Details {% endblock %}
+
+{% block body %}
+<form method="POST" action ="">
+    <h2>Please add any additional information if known</h2>
+    {{form.hidden_tag() }}<br>
+    {{form.publisher.label}}: {{form.publisher}}<br>
+    {{form.genre.label}}: {{form.genre}}<br>
+    {{form.units.label}}: {{form.units}}
+    {{form.esrb_rating.label}}: {{form.esrb_rating}}<br>
+    {{form.engine.label}}: {{form.engine}}<br>
+    {{form.submit}}
+</form>
+{% endblock body %}

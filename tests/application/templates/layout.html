@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Gaming record list </title>>
+</head>
+<body>
+    <navbar>
+        <a href="/">Home</a>
+        <a href="{{ url_for('Add') }}">Add Game</a>
+        <a href="{{ url_for('AddDetails') }}">Add Game Details</a>
+        <a href="{{ url_for('AddUser') }}">Add a User </a>
+        <a href="{{ url_for('Read') }}">Game List</a>
+    </navbar>
+    <h1>My Video Game Record</h1>
+
+    {% block body %}
+    {% endblock body %}
+</body>
