@@ -1,6 +1,6 @@
 # Personal Game Archive README
 ***
-It seems that additional software will need to be downloded. I have tried converting to an mp4 and sharing this link but it was showing the same thing. Here is a small presentation of me demonstrating the app and all the requirements of the project:
+It seems that additional software will need to be downloded. I have tried converting to an mp4 and sharing this link but it was showing the same thing. Here is a small presentation of me demonstrating the app and all the requirements of the project (Issue with the Trello board has been resolved but you need to be signed in.):
 
 [Presentation](https://drive.google.com/file/d/1Fu_o6xfZgq2m3yrE3aXVPt7ydnYowO_w/view?usp=sharing)
 
@@ -130,7 +130,7 @@ The diagram below is an entity relationship diagram for the database that I was 
 
 ## Trello Board<a name= "header7"></a>
 [//]: # "Trello board defining tasks"
-Below is a Trello board (https://trello.com/b/DZAfzoB5/qa-crud-project) that I used for project management throughout the project.
+Below is a Trello board (https://trello.com/invite/b/DZAfzoB5/c10c27ebf4681d622481af5b128f8c14/qa-crud-project) that I used for project management throughout the project.
 
 ![Imgur](https://imgur.com/UezbcN9.png)
 
