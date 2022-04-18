@@ -155,9 +155,12 @@ The testing on the application was done using unit testing to check specific out
 ## Front-End Design<a name= "header17"></a>
 This section will show the html pages that I have created to facilitate CRUD functionality.
 
+Homepage
+
 ![Imgur](https://imgur.com/Ozr91yM.png)
 
 Add a user to the database.
+
 ![Imgur](https://imgur.com/YQ5nS4F.png)
 
 Add game details to the database.
@@ -172,6 +175,7 @@ View the game list .
 ![Imgur](https://imgur.com/Bq1uJ5q.png)
 
 Update and a game in the list followed by the updated game list.
+
 ![Imgur](https://imgur.com/lHKuvRF.png)
 
 ![Imgur](https://imgur.com/isE2uqa.png)
