@@ -1,0 +1,4 @@
+Jenkins.sh
+venv/
+tests/
+application/
