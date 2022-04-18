@@ -83,28 +83,28 @@ The app should now be running. But, if any issues persist, check out the trouble
 ## Design<a name= "header4"></a>
 Here is the design of the app functionality that I wished to create for the users.
 
-- Create a user :
+- Create a user (Facilitates Create capability):
     - Username
     - First Name
     - Last Name
     - Password 
     - Email
 
-- Add a game to their list with some details:
+- Add a game to their list with some details (Facilitates Create capability):
     - Game Title
     - Platform - The system that they play the game on
     - Rating - What score do they give the game
     - Status - They can state whether they plan to play the game or if it is completed etc.
 
-- Add additional details about the game:
+- Add additional details about the game (Facilitates Create capability):
     - Publisher - What company published the game
     - Genre - Specify what type of game it is
     - Units Sold - How many copys of the game were sold
     - ESRB Rating - What age rating was given to the game
     - Engine - What development software was the game built on
 
-- Users can view their games list with the additional details on the read page
-- Users can update or delete games in their games list
+- Users can view their games list with the additional details on the read page (Facilitates Reate capability)
+- Users can update or delete games in their games list using a link (Facilitates Update and Delete capability)
 
 Additional features that I would like the users to be able to do:
 
@@ -151,7 +151,9 @@ The testing on the application was done using unit testing to check specific out
 ![Imgur](https://imgur.com/vI5Altn.png)
 
 ## Front-End Design<a name= "header17"></a>
+This section will show the html pages that I have created to facilitate CRUD functionality
 
+Here 
 ## Troubleshooting<a name= "header5"></a>
 [//]: # "Any issues that can be troubleshooted should be listed here"
 Here I will state any issues that I had regarding this project that may be applicable to you too.
